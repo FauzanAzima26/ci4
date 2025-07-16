@@ -50,7 +50,7 @@ class Komik extends BaseController
 
         $data = [
             'title' => 'Form Tambah Data Komik',
-            'validation' => \config\Services::validation()
+            
         ];
 
         return view('komik/create', $data);
@@ -86,7 +86,7 @@ class Komik extends BaseController
 
         ])) {
             // return redirect()->to('/komik/create')->withInput()->with('validation', \Config\Services::validation());
-            return redirect()->to('/komik/create')->withInput()->with('validation', \Config\Services::validation());
+            return redirect()->to('/komik/create')->withInput();
         }
         dd('berhasil');
 
