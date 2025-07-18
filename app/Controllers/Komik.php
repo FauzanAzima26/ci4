@@ -29,7 +29,6 @@ class Komik extends BaseController
         return view('Komik/index', $data);
     }
 
-
     public function detail($slug)
     {
 
